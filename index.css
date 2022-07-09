@@ -15,3 +15,24 @@ body {
   text-align: center;
   background: white;
 }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 30%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 70%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
