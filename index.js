@@ -1,4 +1,5 @@
 // JS File (Add functions later)
+// Create other functionality 
 
 function changetoPic() {
     let image1 = document.getElementById("image1");
