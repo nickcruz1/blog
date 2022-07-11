@@ -6,13 +6,17 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
  <link rel="stylesheet" href="index.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
 </head>
 <body>
  <!-- Blog Template created with w3schools... customize and make unique at a later time -->
+ 
 
 <div class="header">
   <h2>My Blog</h2>
 </div>
+<button class="btn btn-primary border-light" onclick="bringBackPics()">Bring Back Pics</button>
+<button class="btn btn-danger border-light" onclick="removeAllPics()">Remove Pics</button>
 
   <div class="row">
   <div class="leftcolumn">
@@ -20,14 +24,17 @@
       <h2>TITLE HEADING</h2>
       <h5>Title description, Dec 7, 2017</h5>
       <div class="fakeimg" style="height:300px;">Image</div>
+      <img id="image1" class="pics" src="assets/re1.jpg" alt="RE 1" height="300px">
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <button id="imageBtn" onclick="changetoPic()" class="btn btn-primary">Change Picture</button>
       
        </div>
     <div class="card">
       <h2>TITLE HEADING</h2>
       <h5>Title description, Sep 2, 2017</h5>
       <div class="fakeimg" style="height:300px;">Image</div>
+      <img id="image2" class="pics" src="assets/re2.jpg" alt="RE 1" height="300px">
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
@@ -37,19 +44,30 @@
     <div class="card">
       <h2>About Me</h2>
       <div class="fakeimg" style="height:200px;">Image</div>
+      <img id="image3" class="pics" src="assets/re3.jpg" alt="RE 1" height="300px">
       <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
     </div>
     <div class="card">
       <h3>Popular Post</h3>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div>
+      <div class="fakeimg"><img class="pics" src="assets/re4.jpg" alt="RE 1" height="250px"></div><br>
+      <div class="fakeimg"><img class="pics" src="assets/re4.jpg" alt="RE 1" height="250px"></div><br>
+      <div class="fakeimg"><img class="pics" src="assets/re4.jpg" alt="RE 1" height="250px"></div>
     </div>
     <div class="card">
       <h3>Follow Me</h3>
+      <button ondblclick="followMe()" class="btn btn-success border-danger">Double Click To Follow</button>
       <p>Some text..</p>
     </div>
   </div>
+</div>
+
+<!-- Modal Section-->
+<div id="modal" class="modal">
+  <label for="user">Name...</label>
+  <input type="text">
+  <label for="password">Password</label>
+  <input type="password">
+  <button class="btn btn-info mt-4 border-dark">Submit</button>
 </div>
   
   <div class="footer">
